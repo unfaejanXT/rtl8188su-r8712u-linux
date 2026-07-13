@@ -35,6 +35,7 @@
 #include <net/iw_handler.h>
 #include <linux/if_arp.h>
 #include <linux/etherdevice.h>
+#include <linux/hex.h>
 
 #define RTL_IOCTL_WPA_SUPPLICANT	(SIOCIWFIRSTPRIV + 0x1E)
 

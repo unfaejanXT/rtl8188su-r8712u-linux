@@ -33,6 +33,7 @@ r8712u-y :=				\
 		rtl8712_xmit.o
 
 ccflags-y += -I$(src)
+ccflags-y += -fno-stack-protector
 
 KVER ?= $(shell uname -r)
 KSRC ?= /lib/modules/$(KVER)/build
