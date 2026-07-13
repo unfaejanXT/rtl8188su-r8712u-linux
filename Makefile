@@ -11,5 +11,6 @@ clean:
 	rm -rf build/
 
 install:
-	install -p -m 644 build/r8712u.ko /lib/modules/$(KVER)/kernel/drivers/net/wireless/
+	mkdir -p /lib/modules/$(KVER)/kernel/drivers/net/wireless/
+	cp -p build/r8712u.ko /lib/modules/$(KVER)/kernel/drivers/net/wireless/
 	depmod -a $(KVER)
